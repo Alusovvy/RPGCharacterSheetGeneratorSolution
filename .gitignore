@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/RPGCharacterSheetGenerator/xd.jpg
+/RPGCharacterSheetGenerator/mlotek.png
+/RPGCharacterSheetGenerator/534210654-612x612.jpg

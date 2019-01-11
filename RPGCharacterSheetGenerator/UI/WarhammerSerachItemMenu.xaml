@@ -1,0 +1,34 @@
+﻿<Window x:Class="RPGCharacterSheetGenerator.UI.WarhammerSerachItemMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPGCharacterSheetGenerator.UI"
+        mc:Ignorable="d"
+        Title="WarhammerSerachItemMenu" Height="450" Width="800">
+    <Grid>
+        <Image Source="/RPGCharacterSheetGenerator;component/xd.jpg" Stretch="Fill" Margin="0,2,0,0"/>
+        <Button x:Name="exit" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="Exit_Click">
+            <Image Height="30" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="90"/>
+        </Button>
+        <Button x:Name="topBtn" HorizontalAlignment="Left" Margin="290,106,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59" Click="TopBtn_Click">
+            <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
+        </Button>
+        <Button x:Name="middleBtn" HorizontalAlignment="Left" Margin="290,187,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59">
+            <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
+        </Button>
+        <Button x:Name="bottomBtn" HorizontalAlignment="Left" Margin="290,268,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59">
+            <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
+        </Button>
+
+        <Label x:Name="topbuttonlbl" Content="Item" HorizontalAlignment="Left" Margin="343,123,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="95" Height="27" MouseLeftButtonDown="Topbuttonlbl_MouseLeftButtonDown"/>
+
+        <Label x:Name="middlebuttonlbl" Content="Talent" HorizontalAlignment="Left" Margin="343,205,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Height="25" Width="95"/>
+
+        <Label x:Name="bottombuttonlbl" Content="Spell" HorizontalAlignment="Left" Margin="343,285,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="95" Height="27"/>
+        
+        <Label x:Name="exitlbl" Content="Menu" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="59" Height="27" MouseLeftButtonDown="Exitlbl_MouseLeftButtonDown"/>
+        <Image Margin="210,20,182,322" Source="/RPGCharacterSheetGenerator;component/mlotek.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

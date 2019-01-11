@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RPGCharacterSheetGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1200">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="204*"/>
+            <RowDefinition Height="365*"/>
+        </Grid.RowDefinitions>
+        <Image Source="xd.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Button Name="topBtn" HorizontalAlignment="Left" Margin="436,145,0,0" VerticalAlignment="Top" Width="300" BorderThickness="5" Height="80" Click="Button_Click" Grid.RowSpan="2">
+            <Image Height="70" Source="534210654-612x612.jpg" Stretch="Fill" Width="300"/>
+        </Button>
+        <Button Name="middleBtn" HorizontalAlignment="Left" Margin="436,51.141,0,0" VerticalAlignment="Top" Width="300" BorderThickness="5" Height="80" Grid.Row="1">
+            <Image Height="70" Source="534210654-612x612.jpg" Stretch="Fill" Width="300"/>
+        </Button>
+        <Button Name="bottomBtn" HorizontalAlignment="Left" Margin="436,162,0,0" VerticalAlignment="Top" Width="300" BorderThickness="5" Height="80" Grid.Row="1" Click="BottomBtn_Click">
+            <Image Height="70" Source="534210654-612x612.jpg" Stretch="Fill" Width="290"/>
+        </Button>
         
+        <Label x:Name="topbuttonlbl" Content="Create New Character" HorizontalAlignment="Left" Margin="460,165,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="18" FontWeight="ExtraBold" BorderThickness="0" MouseLeftButtonDown="Topbuttonlbl_MouseLeftButtonDown" Width="270"/>
+        
+        <Label x:Name="middlebuttonlbl" Content="Load Existing Character" HorizontalAlignment="Left" Margin="450,76.141,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="18" FontWeight="ExtraBold" BorderThickness="0" Grid.Row="1"/>
+        
+        <Label x:Name="bottombuttonlbl" Content="Search for..." HorizontalAlignment="Left" Margin="517,185,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="18" FontWeight="ExtraBold" BorderThickness="0" Grid.Row="1" Width="142" MouseLeftButtonDown="Bottombuttonlbl_MouseLeftButtonDown"/>
+        <Image Margin="393,40,399,87" Source="mlotek.png" Stretch="Fill"/>
+
+
+
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPGCharacterSheetGenerator.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,35 @@ namespace RPGCharacterSheetGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
+        WarhammerMainSheetWindow WMSW = new WarhammerMainSheetWindow();
+        WarhammerSerachItemMenu WSIM = new WarhammerSerachItemMenu();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Topbuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            WMSW.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WMSW.Show();
+            this.Close();
+        }
+
+        private void Bottombuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            WSIM.Show();
+            this.Close();
+        }
+
+        private void BottomBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WSIM.Show();
+            this.Close();
         }
     }
 }
