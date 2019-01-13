@@ -14,18 +14,18 @@
         <Button x:Name="topBtn" HorizontalAlignment="Left" Margin="290,106,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59" Click="TopBtn_Click">
             <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
         </Button>
-        <Button x:Name="middleBtn" HorizontalAlignment="Left" Margin="290,187,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59">
+        <Button x:Name="middleBtn" HorizontalAlignment="Left" Margin="290,187,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59" Click="MiddleBtn_Click">
             <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
         </Button>
-        <Button x:Name="bottomBtn" HorizontalAlignment="Left" Margin="290,268,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59">
+        <Button x:Name="bottomBtn" HorizontalAlignment="Left" Margin="290,268,0,0" VerticalAlignment="Top" Width="199" BorderThickness="5" Height="59" Click="BottomBtn_Click">
             <Image Height="49" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="189"/>
         </Button>
 
         <Label x:Name="topbuttonlbl" Content="Item" HorizontalAlignment="Left" Margin="343,123,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="95" Height="27" MouseLeftButtonDown="Topbuttonlbl_MouseLeftButtonDown"/>
 
-        <Label x:Name="middlebuttonlbl" Content="Talent" HorizontalAlignment="Left" Margin="343,205,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Height="25" Width="95"/>
+        <Label x:Name="middlebuttonlbl" Content="Talent" HorizontalAlignment="Left" Margin="343,205,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Height="25" Width="95" MouseLeftButtonDown="Middlebuttonlbl_MouseLeftButtonDown"/>
 
-        <Label x:Name="bottombuttonlbl" Content="Spell" HorizontalAlignment="Left" Margin="343,285,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="95" Height="27"/>
+        <Label x:Name="bottombuttonlbl" Content="Spell" HorizontalAlignment="Left" Margin="343,285,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="95" Height="27" MouseLeftButtonDown="Bottombuttonlbl_MouseLeftButtonDown"/>
         
         <Label x:Name="exitlbl" Content="Menu" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="59" Height="27" MouseLeftButtonDown="Exitlbl_MouseLeftButtonDown"/>
         <Image Margin="210,20,182,322" Source="/RPGCharacterSheetGenerator;component/mlotek.png" Stretch="Fill"/>

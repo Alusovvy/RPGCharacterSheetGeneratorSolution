@@ -21,6 +21,7 @@ namespace RPGCharacterSheetGenerator.UI
     /// </summary>
     public partial class WarhammerItemSearchPage : Window
     {
+        MainWindow MW = new MainWindow();
         public WarhammerItemSearchPage()
         {
             InitializeComponent();
@@ -71,6 +72,18 @@ namespace RPGCharacterSheetGenerator.UI
 
 
 
+        }
+
+        private void Exitlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MW.Show();
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MW.Show();
+            this.Close();
         }
     }
 }

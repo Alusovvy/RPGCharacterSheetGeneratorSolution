@@ -1,0 +1,35 @@
+﻿<Window x:Class="RPGCharacterSheetGenerator.UI.WarhammerSpellSearchPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPGCharacterSheetGenerator.UI"
+        mc:Ignorable="d"
+        Title="WarhammerSpellSearchPage" Height="600" Width="1200">
+    <Grid>
+        <Image Source="/RPGCharacterSheetGenerator;component/xd.jpg" Stretch="Fill"/>
+        <Image Margin="353,12,439,480" Source="/RPGCharacterSheetGenerator;component/mlotek.png" Stretch="Fill"/>
+        <DataGrid x:Name="dgvSpells" HorizontalAlignment="Left" Height="439" Margin="10,120,0,0" VerticalAlignment="Top" Width="678"/>
+        <Label x:Name="lblSearch" Content="Search" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="68" FontSize="16"/>
+        <TextBox x:Name="txbSearch" HorizontalAlignment="Left" Height="23" Margin="78,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="369" TextChanged="TxbSearch_TextChanged" />
+        <Label x:Name="lblIdInfo" Content="Type in item ID to select it" HorizontalAlignment="Left" Margin="467,89,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="188" FontSize="11" Height="26"/>
+        <Button x:Name="selectBtn" Content="Select" HorizontalAlignment="Left" Margin="699,94,0,0" VerticalAlignment="Top" Width="54" Click="SelectBtn_Click"/>
+        <TextBox x:Name="txbItemId" HorizontalAlignment="Left" Height="23" Margin="630,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="lblSpellName" Content="Spell Name" HorizontalAlignment="Left" Margin="699,145,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="100" FontSize="16"/>
+        <Label x:Name="lblCastingNumber" Content="Casting Number" HorizontalAlignment="Left" Margin="699,186,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="140" FontSize="16"/>
+        <Label x:Name="lblIngredient" Content="Ingredient" HorizontalAlignment="Left" Margin="699,266,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="100" FontSize="16"/>
+        <Label x:Name="lblDescription" Content="Description" HorizontalAlignment="Left" Margin="699,302,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="100" FontSize="16"/>
+        <Label x:Name="txbDescription" Content="" HorizontalAlignment="Left" Margin="865,302,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="264" FontSize="16" Height="100"/>
+        <Label x:Name="txbSpellName" Content="" HorizontalAlignment="Left" Margin="865,145,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="264" FontSize="16"/>
+        <Label x:Name="txbCastingNumber" Content="" HorizontalAlignment="Left" Margin="873,186,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="270" FontSize="16"/>
+        <Label x:Name="txbIngredient" Content="" HorizontalAlignment="Left" Margin="865,266,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="278" FontSize="16"/>
+
+        <Button x:Name="exit" HorizontalAlignment="Left" Margin="1080,20,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="Exit_Click"/>
+        <Image Height="30" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Margin="1080,25,12,514"/>
+
+        <Label x:Name="exitlbl" Content="Menu" HorizontalAlignment="Left" Margin="1100,25,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="59" Height="27" MouseLeftButtonDown="Exitlbl_MouseLeftButtonDown"/>
+        <Label x:Name="lblCastingTime" Content="Casting Time" HorizontalAlignment="Left" Margin="699,217,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="124" FontSize="16"/>
+        <Label x:Name="txbCastingTime" Content="" HorizontalAlignment="Left" Margin="873,217,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="270" FontSize="16"/>
+
+    </Grid>
+</Window>

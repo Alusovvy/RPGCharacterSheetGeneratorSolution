@@ -1,0 +1,31 @@
+﻿<Window x:Class="RPGCharacterSheetGenerator.UI.WarhammerTalentSearchPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPGCharacterSheetGenerator.UI"
+        mc:Ignorable="d"
+        Title="WarhammerTalentSearchPage" Height="600" Width="1200">
+    <Grid>
+        <Image Source="/RPGCharacterSheetGenerator;component/xd.jpg" Stretch="Fill"/>
+        <Image Margin="353,12,439,480" Source="/RPGCharacterSheetGenerator;component/mlotek.png" Stretch="Fill"/>
+        <DataGrid x:Name="dgvTalents" HorizontalAlignment="Left" Height="439" Margin="10,120,0,0" VerticalAlignment="Top" Width="678"/>
+        <Label x:Name="lblSearch" Content="Search" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="68" FontSize="16"/>
+        <TextBox x:Name="txbSearch" HorizontalAlignment="Left" Height="23" Margin="78,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="369" TextChanged="TxbSearch_TextChanged"/>
+        <Label x:Name="lblIdInfo" Content="Type in item ID to select it" HorizontalAlignment="Left" Margin="467,89,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="158" FontSize="11" Height="26"/>
+        <Button x:Name="selectBtn" Content="Select" HorizontalAlignment="Left" Margin="699,94,0,0" VerticalAlignment="Top" Width="54" Click="SelectBtn_Click"/>
+        <TextBox x:Name="txbItemId" HorizontalAlignment="Left" Height="23" Margin="630,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="lblItemName" Content="Talent Name" HorizontalAlignment="Left" Margin="693,195,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="116" FontSize="16"/>
+        <Label x:Name="lblDescription" Content="Description" HorizontalAlignment="Left" Margin="699,250,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="100" FontSize="16"/>
+        <Label x:Name="lblBonus" Content="Bonus" HorizontalAlignment="Left" Margin="699,402,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="68" FontSize="16"/>
+        <Label x:Name="txbName" Content="" HorizontalAlignment="Left" Margin="865,195,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="264" FontSize="16"/>
+        <Label x:Name="txbDescription" Content="" HorizontalAlignment="Left" Margin="865,250,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="270" FontSize="16" Height="147"/>
+        <Label x:Name="txbBonus" Content="" HorizontalAlignment="Left" Margin="865,402,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="278" FontSize="16"/>
+
+        <Button x:Name="exit" HorizontalAlignment="Left" Margin="1080,20,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="Exit_Click"/>
+        <Image Height="40" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Margin="1082,20,10,509"/>
+
+        <Label x:Name="exitlbl" Content="Menu" HorizontalAlignment="Left" Margin="1100,25,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="59" Height="27" MouseLeftButtonDown="Exitlbl_MouseLeftButtonDown"/>
+
+    </Grid>
+</Window>

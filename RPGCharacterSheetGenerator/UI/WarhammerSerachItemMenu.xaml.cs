@@ -19,6 +19,11 @@ namespace RPGCharacterSheetGenerator.UI
     /// </summary>
     public partial class WarhammerSerachItemMenu : Window
     {
+        WarhammerItemSearchPage WISP = new WarhammerItemSearchPage();
+        MainWindow MW = new MainWindow();
+        WarhammerTalentSearchPage WTSP = new WarhammerTalentSearchPage();
+        WarhammerSpellSearchPage WSSP = new WarhammerSpellSearchPage();
+
         public WarhammerSerachItemMenu()
         {
             InitializeComponent();
@@ -26,29 +31,51 @@ namespace RPGCharacterSheetGenerator.UI
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow MW = new MainWindow();
             MW.Show();
             this.Close();
         }
 
         private void Exitlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MainWindow MW = new MainWindow();
+
             MW.Show();
             this.Close();
         }
 
         private void Topbuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            WarhammerItemSearchPage WISP = new WarhammerItemSearchPage();
+            
             WISP.Show();
             this.Close();
         }
 
         private void TopBtn_Click(object sender, RoutedEventArgs e)
         {
-            WarhammerItemSearchPage WISP = new WarhammerItemSearchPage();
             WISP.Show();
+            this.Close();
+        }
+
+        private void MiddleBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WTSP.Show();
+            this.Close();
+        }
+
+        private void Middlebuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            WTSP.Show();
+            this.Close();
+        }
+
+        private void Bottombuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            WSSP.Show();
+            this.Close();
+        }
+
+        private void BottomBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WSSP.Show();
             this.Close();
         }
     }

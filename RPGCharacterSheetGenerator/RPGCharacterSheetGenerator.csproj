@@ -57,7 +57,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DAL\ItemDAL.cs" />
+    <Compile Include="DAL\SpellDAL.cs" />
+    <Compile Include="DAL\TalentDAL.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Spell.cs" />
+    <Compile Include="Models\Talent.cs" />
+    <Compile Include="Repos\BasicSkills.cs" />
     <Compile Include="UI\WarhammerItemSearchPage.xaml.cs">
       <DependentUpon>WarhammerItemSearchPage.xaml</DependentUpon>
     </Compile>
@@ -66,6 +71,12 @@
     </Compile>
     <Compile Include="UI\WarhammerSerachItemMenu.xaml.cs">
       <DependentUpon>WarhammerSerachItemMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WarhammerSpellSearchPage.xaml.cs">
+      <DependentUpon>WarhammerSpellSearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WarhammerTalentSearchPage.xaml.cs">
+      <DependentUpon>WarhammerTalentSearchPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -88,6 +99,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\WarhammerSerachItemMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\WarhammerSpellSearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\WarhammerTalentSearchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,6 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="mlotek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1-18c45493ab.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

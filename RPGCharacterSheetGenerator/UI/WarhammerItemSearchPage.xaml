@@ -30,7 +30,7 @@
 
         <Label x:Name="lblLocation_Covered" Content="Location Covered" HorizontalAlignment="Left" Margin="699,459,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="152" FontSize="16" RenderTransformOrigin="0.5,0.5"/>
         <Label x:Name="lblAP" Content="AP" HorizontalAlignment="Left" Margin="699,495,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="110" FontSize="16" RenderTransformOrigin="0.5,0.5"/>
-        
+
         <Label x:Name="LocationCovered" Content="" HorizontalAlignment="Left" Margin="865,459,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="243" FontSize="16"/>
         <Label x:Name="Reload" Content="" HorizontalAlignment="Left" Margin="865,428,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="227" FontSize="16"/>
         <Label x:Name="Group" Content="" HorizontalAlignment="Left" Margin="865,392,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="227" FontSize="16"/>
@@ -43,6 +43,10 @@
         <Label x:Name="Enc" Content="" HorizontalAlignment="Left" Margin="873,186,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="270" FontSize="16"/>
         <Label x:Name="Price" Content="" HorizontalAlignment="Left" Margin="865,217,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="#FFE0D6D6" Width="278" FontSize="16"/>
 
+        <Button x:Name="exit" HorizontalAlignment="Left" Margin="1080,20,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="Exit_Click"/>
+        <Image Height="30" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Margin="1080,25,12,514"/>
+
+        <Label x:Name="exitlbl" Content="Menu" HorizontalAlignment="Left" Margin="1100,25,0,0" VerticalAlignment="Top" FontFamily="Rockwell Extra Bold" FontSize="14" FontWeight="ExtraBold" BorderThickness="0" Width="59" Height="27" MouseLeftButtonDown="Exitlbl_MouseLeftButtonDown"/>
 
 
 

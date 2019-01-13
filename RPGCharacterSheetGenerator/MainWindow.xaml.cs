@@ -21,8 +21,8 @@ namespace RPGCharacterSheetGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
-        WarhammerMainSheetWindow WMSW = new WarhammerMainSheetWindow();
-        WarhammerSerachItemMenu WSIM = new WarhammerSerachItemMenu();
+        
+      
         public MainWindow()
         {
             InitializeComponent();
@@ -30,24 +30,28 @@ namespace RPGCharacterSheetGenerator
 
         private void Topbuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            WarhammerMainSheetWindow WMSW = new WarhammerMainSheetWindow();
             WMSW.Show();
             this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            WarhammerMainSheetWindow WMSW = new WarhammerMainSheetWindow();
             WMSW.Show();
             this.Close();
         }
 
         private void Bottombuttonlbl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            WarhammerSerachItemMenu WSIM = new WarhammerSerachItemMenu();
             WSIM.Show();
             this.Close();
         }
 
         private void BottomBtn_Click(object sender, RoutedEventArgs e)
         {
+            WarhammerSerachItemMenu WSIM = new WarhammerSerachItemMenu();
             WSIM.Show();
             this.Close();
         }
