@@ -11,7 +11,10 @@
             <RowDefinition Height="204*"/>
             <RowDefinition Height="365*"/>
         </Grid.RowDefinitions>
-        <Image Source="xd.jpg" Stretch="Fill" Grid.RowSpan="2"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="xd.jpg" Stretch="Fill" />
+        </Grid.Background>
+
         <Button Name="topBtn" HorizontalAlignment="Left" Margin="436,145,0,0" VerticalAlignment="Top" Width="300" BorderThickness="5" Height="80" Click="Button_Click" Grid.RowSpan="2">
             <Image Height="70" Source="534210654-612x612.jpg" Stretch="Fill" Width="300"/>
         </Button>
