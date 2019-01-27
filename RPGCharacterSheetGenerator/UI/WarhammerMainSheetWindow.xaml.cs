@@ -20,6 +20,7 @@ namespace RPGCharacterSheetGenerator.UI
     /// </summary>
     public partial class WarhammerMainSheetWindow : Window
     {
+        bool SkillsRolled = false;
         BasicSkills BS = new BasicSkills();
         public WarhammerMainSheetWindow()
         {
@@ -69,7 +70,24 @@ namespace RPGCharacterSheetGenerator.UI
             MessageBox.Show("Your will power is" + sWP.Content);
             sFel.Content = BS.RollSkill(cmbRace.Text, fellowship.Name.ToString());
             MessageBox.Show("Your fellowship is" + sFel.Content);
+            SkillsRolled = true;
         }
 
+
+        private void A_Fel_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sFel.Content.ToString());
+            if (Int32.TryParse(A_Fel.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sFel.Content.ToString()) + parsed;
+                C_Fel.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+                
+                MessageBox.Show("Use only numbers");
+            }
+            
+        }
     }
 }

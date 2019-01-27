@@ -21,8 +21,8 @@
         <Label x:Name="lblHeight" Content="Height:" HorizontalAlignment="Left" Margin="27,207,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
         <Label x:Name="lblDistinguishingMarks" Content="Distinguishing Marks:" HorizontalAlignment="Left" Margin="27,241,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="182"/>
         <Label x:Name="lblMainCRP" Content="Main:" HorizontalAlignment="Left" Margin="38,292,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
-        <Label x:Name="lblStarting" Content="Advance:" HorizontalAlignment="Left" Margin="38,332,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
-        <Label x:Name="lblCurrent" Content="Current:" HorizontalAlignment="Left" Margin="38,353,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
+        <Label x:Name="lblStarting" Content="Advance:" HorizontalAlignment="Left" Margin="38,329,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69" Height="32"/>
+        <Label x:Name="lblCurrent" Content="Current:" HorizontalAlignment="Left" Margin="38,343,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
         <Label x:Name="weaponSkill" Content="WS" HorizontalAlignment="Left" Margin="120,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="29" Foreground="#FFE8DCDC"/>
         <Label x:Name="ballisticSkill" Content="BS" HorizontalAlignment="Left" Margin="160,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="29" Foreground="#FFE8DCDC"/>
         <Label x:Name="strength" Content="S" HorizontalAlignment="Left" Margin="206,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="21" Foreground="#FFE8DCDC"/>
@@ -31,7 +31,7 @@
         <Label x:Name="intelligence" Content="Int" HorizontalAlignment="Left" Margin="316,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="36" Foreground="#FFE8DCDC"/>
         <Label x:Name="willpower" Content="WP" HorizontalAlignment="Left" Margin="357,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="36" Foreground="#FFE8DCDC"/>
         <Label x:Name="fellowship" Content="Fel" HorizontalAlignment="Left" Margin="391,301,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="36" Foreground="#FFE8DCDC"/>
-        <Label x:Name="lblstarting" Content="Starting:" HorizontalAlignment="Left" Margin="38,314,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="77"/>
+        <Label x:Name="lblstarting" Content="Starting:" HorizontalAlignment="Left" Margin="38,312,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="77"/>
         <Label x:Name="sWS" Content="0" HorizontalAlignment="Left" Margin="113,314,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="34" Height="29"/>
         <Label x:Name="sBS" Content="0" HorizontalAlignment="Left" Margin="152,314,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="34" Height="29"/>
         <Label x:Name="sS" Content="0" HorizontalAlignment="Left" Margin="191,314,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="34" Height="29"/>
@@ -50,7 +50,23 @@
             <ComboBoxItem x:Name="cmbHuman" Content="human" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="cmbHalfling" Content="halfling" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="20" Margin="90,50,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="20" Margin="90,50,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="176"/>
+        <TextBox Name="A_WS" HorizontalAlignment="Left" Height="16" Margin="115,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_BS" HorizontalAlignment="Left" Height="16" Margin="154,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_S" HorizontalAlignment="Left" Height="16" Margin="194,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.459,0.521"/>
+        <TextBox Name="A_T" HorizontalAlignment="Left" Height="16" Margin="233,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_Ag" HorizontalAlignment="Left" Height="16" Margin="270,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_Int" HorizontalAlignment="Left" Height="16" Margin="310,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_WP" HorizontalAlignment="Left" Height="16" Margin="352,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="A_Fel" HorizontalAlignment="Left" Height="16" Margin="390,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_Fel_TextChanged_1"/>
+        <Label Name="C_WS"  Content="0" HorizontalAlignment="Left" Margin="115,348,0,0" VerticalAlignment="Top" Height="24" Width="34" FontWeight="Bold"/>
+        <Label Name="C_BS" Content="0" HorizontalAlignment="Left" Margin="154,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
+        <Label Name="C_S" Content="0" HorizontalAlignment="Left" Margin="194,348,0,0" VerticalAlignment="Top" Height="24" Width="34" FontWeight="Bold"/>
+        <Label Name="C_T" Content="0" HorizontalAlignment="Left" Margin="233,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
+        <Label Name="C_Ag" Content="0" HorizontalAlignment="Left" Margin="272,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
+        <Label Name="C_Int" Content="0" HorizontalAlignment="Left" Margin="312,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
+        <Label Name="C_WP" Content="0" HorizontalAlignment="Left" Margin="353,343,0,0" VerticalAlignment="Top" Height="27" Width="36" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_Fel" Content="0" HorizontalAlignment="Left" Margin="389,343,0,0" VerticalAlignment="Top" Height="26" Width="36" FontWeight="Bold" FontSize="14"/>
 
     </Grid>
 </Window>
