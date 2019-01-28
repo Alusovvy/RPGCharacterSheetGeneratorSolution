@@ -55,5 +55,12 @@ namespace RPGCharacterSheetGenerator
             WSIM.Show();
             this.Close();
         }
+
+        private void MiddleBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SavedCharacterSheet SCS = new SavedCharacterSheet();
+            SCS.Show();
+            this.Close();
+        }
     }
 }

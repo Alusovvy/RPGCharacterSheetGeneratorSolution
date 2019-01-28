@@ -11,11 +11,11 @@
         <Grid.Background>
             <ImageBrush ImageSource="/RPGCharacterSheetGenerator;component/1-18c45493ab.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="38,45,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="47"/>
-        <Label x:Name="lblRace" Content="Race:" HorizontalAlignment="Left" Margin="43,65,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="47" RenderTransformOrigin="0.519,-0.068"/>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="38,37,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="47"/>
+        <Label x:Name="lblRace" Content="Race:" HorizontalAlignment="Left" Margin="42,55,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="47" RenderTransformOrigin="0.519,-0.068"/>
         <Label x:Name="lblCareer" Content="Career Path:" HorizontalAlignment="Left" Margin="27,89,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="108"/>
-        <Label x:Name="lblGender" Content="Gender:" HorizontalAlignment="Left" Margin="27,153,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
-        <Label x:Name="lblDateOfBirth" Content="Date of Birth:" HorizontalAlignment="Left" Margin="27,173,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="122"/>
+        <Label x:Name="lblGender" Content="Gender:" HorizontalAlignment="Left" Margin="27,158,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
+        <Label x:Name="lblDateOfBirth" Content="Date of Birth:" HorizontalAlignment="Left" Margin="25,178,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="122"/>
         <Label x:Name="lblNationality" Content="Nationality:" HorizontalAlignment="Left" Margin="27,192,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="108"/>
         <Label x:Name="lblEyes" Content="Eyes:" HorizontalAlignment="Left" Margin="27,221,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
         <Label x:Name="lblHeight" Content="Height:" HorizontalAlignment="Left" Margin="27,207,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="69"/>
@@ -43,28 +43,32 @@
         <Button x:Name="BtnSkillRoll" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="BtnSkillRoll_Click" >
             <Image Height="30" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="90" RenderTransformOrigin="0.659,0.381"/>
         </Button>
+        <Button x:Name="BtnSave" HorizontalAlignment="Left" Margin="125,0,0,0" VerticalAlignment="Top" Width="100" BorderThickness="5" Height="40" Click="BtnSave_Click" >
+            <Image Height="30" Source="/RPGCharacterSheetGenerator;component/534210654-612x612.jpg" Stretch="Fill" Width="90" RenderTransformOrigin="0.659,0.381"/>
+        </Button>
         <Label x:Name="lblSkillRoll" Content="Roll Skills" HorizontalAlignment="Left" Margin="19,5,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="14" Width="88" Foreground="#FFE8DCDC" MouseLeftButtonDown="SkillRoll_MouseLeftButtonDown"/>
-        <ComboBox x:Name="cmbRace" HorizontalAlignment="Left" Margin="113,70,0,0" VerticalAlignment="Top" Width="120" Height="19" FontSize="9">
+        <Label x:Name="lblSave" Content="     Save " HorizontalAlignment="Left" Margin="126,5,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="12" Width="99" Foreground="#FFE8DCDC" MouseLeftButtonDown="LblSave_MouseLeftButtonDown"/>
+        <ComboBox x:Name="cmbRace" HorizontalAlignment="Left" Margin="94,65,0,0" VerticalAlignment="Top" Width="120" Height="19" FontSize="9">
             <ComboBoxItem x:Name="cmbDwarf" Content="dwarf" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="cmbElf" Content="elf" HorizontalAlignment="Left" Width="118" />
             <ComboBoxItem x:Name="cmbHuman" Content="human" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="cmbHalfling" Content="halfling" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="20" Margin="90,50,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="176"/>
-        <TextBox Name="A_WS" HorizontalAlignment="Left" Height="16" Margin="115,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
-        <TextBox Name="A_BS" HorizontalAlignment="Left" Height="16" Margin="154,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
-        <TextBox Name="A_S" HorizontalAlignment="Left" Height="16" Margin="194,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.459,0.521"/>
-        <TextBox Name="A_T" HorizontalAlignment="Left" Height="16" Margin="233,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
-        <TextBox Name="A_Ag" HorizontalAlignment="Left" Height="16" Margin="270,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
-        <TextBox Name="A_Int" HorizontalAlignment="Left" Height="16" Margin="310,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
-        <TextBox Name="A_WP" HorizontalAlignment="Left" Height="16" Margin="352,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37"/>
+        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="20" Margin="94,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBox Name="A_WS" HorizontalAlignment="Left" Height="16" Margin="115,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_WS_TextChanged"/>
+        <TextBox Name="A_BS" HorizontalAlignment="Left" Height="16" Margin="154,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_BS_TextChanged"/>
+        <TextBox Name="A_S" HorizontalAlignment="Left" Height="16" Margin="194,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_S_TextChanged" RenderTransformOrigin="0.459,0.521"/>
+        <TextBox Name="A_T" HorizontalAlignment="Left" Height="16" Margin="233,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_T_TextChanged"/>
+        <TextBox Name="A_Ag" HorizontalAlignment="Left" Height="16" Margin="270,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_Ag_TextChanged"/>
+        <TextBox Name="A_Int" HorizontalAlignment="Left" Height="16" Margin="310,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_Int_TextChanged"/>
+        <TextBox Name="A_WP" HorizontalAlignment="Left" Height="16" Margin="352,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_WP_TextChanged"/>
         <TextBox Name="A_Fel" HorizontalAlignment="Left" Height="16" Margin="390,335,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" TextChanged="A_Fel_TextChanged_1"/>
-        <Label Name="C_WS"  Content="0" HorizontalAlignment="Left" Margin="115,348,0,0" VerticalAlignment="Top" Height="24" Width="34" FontWeight="Bold"/>
-        <Label Name="C_BS" Content="0" HorizontalAlignment="Left" Margin="154,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
-        <Label Name="C_S" Content="0" HorizontalAlignment="Left" Margin="194,348,0,0" VerticalAlignment="Top" Height="24" Width="34" FontWeight="Bold"/>
-        <Label Name="C_T" Content="0" HorizontalAlignment="Left" Margin="233,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
-        <Label Name="C_Ag" Content="0" HorizontalAlignment="Left" Margin="272,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
-        <Label Name="C_Int" Content="0" HorizontalAlignment="Left" Margin="312,348,0,0" VerticalAlignment="Top" Height="24" Width="37" FontWeight="Bold"/>
+        <Label Name="C_WS"  Content="0" HorizontalAlignment="Left" Margin="115,343,0,0" VerticalAlignment="Top" Height="26" Width="34" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_BS" Content="0" HorizontalAlignment="Left" Margin="154,343,0,0" VerticalAlignment="Top" Height="26" Width="37" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_S" Content="0" HorizontalAlignment="Left" Margin="194,343,0,0" VerticalAlignment="Top" Height="26" Width="34" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_T" Content="0" HorizontalAlignment="Left" Margin="233,343,0,0" VerticalAlignment="Top" Height="26" Width="37" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_Ag" Content="0" HorizontalAlignment="Left" Margin="272,343,0,0" VerticalAlignment="Top" Height="26" Width="37" FontWeight="Bold" FontSize="14"/>
+        <Label Name="C_Int" Content="0" HorizontalAlignment="Left" Margin="312,343,0,0" VerticalAlignment="Top" Height="26" Width="37" FontWeight="Bold" FontSize="14"/>
         <Label Name="C_WP" Content="0" HorizontalAlignment="Left" Margin="353,343,0,0" VerticalAlignment="Top" Height="27" Width="36" FontWeight="Bold" FontSize="14"/>
         <Label Name="C_Fel" Content="0" HorizontalAlignment="Left" Margin="389,343,0,0" VerticalAlignment="Top" Height="26" Width="36" FontWeight="Bold" FontSize="14"/>
 

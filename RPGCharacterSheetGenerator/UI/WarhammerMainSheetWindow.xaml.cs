@@ -89,5 +89,122 @@ namespace RPGCharacterSheetGenerator.UI
             }
             
         }
+
+        private void A_WP_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sWP.Content.ToString());
+            if (Int32.TryParse(A_WP.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sWP.Content.ToString()) + parsed;
+                C_WP.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_Int_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sInt.Content.ToString());
+            if (Int32.TryParse(A_Int.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sInt.Content.ToString()) + parsed;
+                C_Fel.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_Ag_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sAg.Content.ToString());
+            if (Int32.TryParse(A_Ag.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sAg.Content.ToString()) + parsed;
+                C_Ag.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_T_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sT.Content.ToString());
+            if (Int32.TryParse(A_T.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sT.Content.ToString()) + parsed;
+                C_T.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_S_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sS.Content.ToString());
+            if (Int32.TryParse(A_S.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sS.Content.ToString()) + parsed;
+                C_S.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_BS_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sBS.Content.ToString());
+            if (Int32.TryParse(A_BS.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sBS.Content.ToString()) + parsed;
+                C_BS.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void A_WS_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int sum = Int32.Parse(sWS.Content.ToString());
+            if (Int32.TryParse(A_WS.Text, out int parsed) && SkillsRolled)
+            {
+                sum = Int32.Parse(sWS.Content.ToString()) + parsed;
+                C_WS.Content = sum.ToString();
+            }
+            else if (SkillsRolled)
+            {
+
+                MessageBox.Show("Use only numbers");
+            }
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
+            System.IO.File.WriteAllText(txbName.Text + ".txt", xaml);
+        }
+
+        private void LblSave_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
+            System.IO.File.WriteAllText(txbName.Text+".txt", xaml);
+        }
     }
 }
