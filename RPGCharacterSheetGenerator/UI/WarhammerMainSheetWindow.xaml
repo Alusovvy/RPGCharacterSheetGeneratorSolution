@@ -71,6 +71,8 @@
         <Label Name="C_Int" Content="0" HorizontalAlignment="Left" Margin="312,343,0,0" VerticalAlignment="Top" Height="26" Width="37" FontWeight="Bold" FontSize="14"/>
         <Label Name="C_WP" Content="0" HorizontalAlignment="Left" Margin="353,343,0,0" VerticalAlignment="Top" Height="27" Width="36" FontWeight="Bold" FontSize="14"/>
         <Label Name="C_Fel" Content="0" HorizontalAlignment="Left" Margin="389,343,0,0" VerticalAlignment="Top" Height="26" Width="36" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txbCharacterSheet" HorizontalAlignment="Left" Height="20" Margin="310,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblCharacterSheet" Content="Character Sheet Name:" HorizontalAlignment="Left" Margin="310,-9,0,0" VerticalAlignment="Top" FontFamily="Monofonto" FontSize="16" Width="174"/>
 
     </Grid>
 </Window>

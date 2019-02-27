@@ -197,14 +197,34 @@ namespace RPGCharacterSheetGenerator.UI
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
-            string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
-            System.IO.File.WriteAllText(txbName.Text + ".txt", xaml);
+            if (txbCharacterSheet.Text == "")
+            {
+                MessageBox.Show("You need to name your character sheet in order to save it!");
+            }else
+            {
+               string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
+               System.IO.File.WriteAllText(@"C:\Users\Alusowy\source\repos\RPGCharacterSheetGeneratorSolution\RPGCharacterSheetGenerator\Saves\" + txbCharacterSheet.Text + ".txt", xaml);
+                SavedCharacterSheet SCS = new SavedCharacterSheet();
+                SCS.Show();
+                this.Close();
+            }
+
         }
 
         private void LblSave_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
-            System.IO.File.WriteAllText(txbName.Text+".txt", xaml);
+            if (txbCharacterSheet.Text == "")
+            {
+                MessageBox.Show("You need to name your character sheet in order to save it!");
+            }
+            else
+            {
+                string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
+                System.IO.File.WriteAllText(@"C:\Users\Alusowy\source\repos\RPGCharacterSheetGeneratorSolution\RPGCharacterSheetGenerator\Saves\" + txbCharacterSheet.Text + ".txt", xaml);
+                SavedCharacterSheet SCS = new SavedCharacterSheet();
+                SCS.Show();
+                this.Close();
+            }
         }
     }
 }
