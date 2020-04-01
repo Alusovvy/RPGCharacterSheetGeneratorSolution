@@ -203,10 +203,11 @@ namespace RPGCharacterSheetGenerator.UI
             }else
             {
                string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
-               System.IO.File.WriteAllText(@"C:\Users\Alusowy\source\repos\RPGCharacterSheetGeneratorSolution\RPGCharacterSheetGenerator\Saves\" + txbCharacterSheet.Text + ".txt", xaml);
+               System.IO.File.WriteAllText(@"C:\" + txbCharacterSheet.Text + ".txt", xaml);
                 SavedCharacterSheet SCS = new SavedCharacterSheet();
                 SCS.Show();
                 this.Close();
+                MessageBox.Show("Saved at your C drive main directory // Zapisano na dysku C");
             }
 
         }
@@ -220,10 +221,12 @@ namespace RPGCharacterSheetGenerator.UI
             else
             {
                 string xaml = System.Windows.Markup.XamlWriter.Save(this.Content);
-                System.IO.File.WriteAllText(@"C:\Users\Alusowy\source\repos\RPGCharacterSheetGeneratorSolution\RPGCharacterSheetGenerator\Saves\" + txbCharacterSheet.Text + ".txt", xaml);
+                System.IO.File.WriteAllText(@"C:\" + txbCharacterSheet.Text + ".txt", xaml);
                 SavedCharacterSheet SCS = new SavedCharacterSheet();
                 SCS.Show();
                 this.Close();
+
+                MessageBox.Show("Saved at your C drive main directory // Zapisano na dysku C");
             }
         }
     }
